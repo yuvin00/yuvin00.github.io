@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuvin Kim | Personal Site</title>
+
+  <link rel="stylesheet" href="css/Myweb1.css">
+</head>
+
+<body>
+
+<header>
+  <span class="site-slogan">The Quiet Record</span>
+
+  <div class="header-right">
+    <nav class="top-nav">
+      <span class="home-btn" id="homeBtn">🏠</span>
+      <a data-page="about">About</a>
+      <a data-page="portfolio">Portfolio</a>
+      <a data-page="gallery">Gallery</a>
+      <a data-page="contact">Contact</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn">☰</div>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-overlay">
+    <h1>About Yuvin Kim</h1>
+    <p>Watching, Recording, Thinking</p>
+  </div>
+
+  <img src="images/충남대1.jpg" class="hero-image active">
+  <img src="images/풍경8.jpg" class="hero-image">
+  <img src="images/물까치1.jpg" class="hero-image">
+  <img src="images/비둘기4.jpg" class="hero-image">
+  <img src="images/인턴1.jpg" class="hero-image">
+</section>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer">
+  <a id="drawerHome">Home</a>
+  <a data-page="about">About</a>
+  <a data-page="portfolio">Portfolio</a>
+  <a data-page="gallery">Gallery</a>
+  <a data-page="contact">Contact</a>
+</aside>
+
+<main>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="page">
+    <div class="grid">
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          수학을 전공하며, 시뮬레이션과 자연 관찰을 통해  
+          현상을 이해하고 기록하는 과정에 관심을 두고 있습니다.  
+          탐조(Birdwatching)는 이러한 관심을 일상에서 실천하는 중요한 활동입니다.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Profile</h3>
+        <ul>
+          <li><strong>이름</strong> : 김유빈</li>
+          <li><strong>전공</strong> : 수학</li>
+          <li><strong>관심 분야</strong> : 수학, 시뮬레이션, 자연 관찰</li>
+          <li><strong>취미</strong> : 탐조(Birdwatching)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <strong>고등학교</strong> : 유성여자고등학교 (2016.03 – 2019.02)<br>
+          </li>
+          <li>
+            <strong>대학교</strong> : 충남대학교 (2021.03 – 2026.02 졸업 예정)<br>
+            수학 전공 · 재학 중
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Experience</h3>
+        <ul>
+          <li>
+            <strong>학부생 인턴</strong> – GIST 물리·광과학과 (2025.01.06 ~ 2025.01.24)<br>
+            Python 및 MATLAB을 활용한 몬테카를로 전산모사 실험 수행,
+            실험 결과 분석 및 보고서 작성
+          </li><br>
+
+          <li>
+            <strong>연구원 인턴</strong> – 한국원자력연구원(KAERI) 하나로이용부 (2025.06.24 ~ 2025.08.31)<br>
+            연구용 원자로(HANARO) 관련 실험 및 해석 업무 보조,
+            수치 시뮬레이션 기반 데이터 처리
+          </li><br>
+
+          <li>
+            <strong>교육 활동</strong> – 도담국어논술학원 (2024.07.01 ~ )<br>
+            온라인 학습 보조, 학생 상담,
+            지문 요약 및 어휘·글쓰기 지도
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section id="portfolio" class="page">
+    <div class="grid">
+
+      <div class="card">
+        <h2>GIST 동계 Internship</h2>
+        <p class="muted">
+          학부생 인턴 – GIST 물리·광과학과
+          (2025.01.06 – 2025.01.24)
+        </p>
+
+        <img src="images/인턴(동계).jpg" class="card-image" alt="GIST Internship">
+
+        <p>
+          Python과 MATLAB을 활용한 몬테카를로 전산모사 실험을 수행하고,
+          실험 결과 분석 및 보고서를 작성하였다.
+        </p><br>
+
+        <ul>
+          <li>
+            몬테카를로 방법론(Monte Carlo Methods)에 대한 이론적 이해를 바탕으로
+            확률적 사건의 전산모사 실험 수행
+            <ul>
+              <li>
+                Buffon’s Needle Problem을 통해 확률과 기하학적 조건에 따른
+                π 값 추정 원리 학습
+              </li>
+              <li>
+                바늘의 각도, 중심과 선 사이의 거리 등을 변수로 하여
+                교차 여부를 판단하는 알고리즘 설계
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            Python 및 MATLAB을 활용한 몬테카를로 알고리즘 구현
+            <ul>
+              <li>
+                Python(Google Colab)을 이용한 Buffon’s Needle Algorithm 구현
+              </li>
+              <li>
+                MATLAB을 이용한 Hit-and-Miss Algorithm 구현을 통해
+                내장 상수 π를 사용하지 않고 π 값 추정
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            실험 결과 분석 및 보고
+            <ul>
+              <li>
+                시행 횟수 N = 100, 10,000에 따른 π 값의 확률분포 비교 분석
+              </li>
+              <li>
+                log|Error| 그래프에 대한 선형 회귀 분석을 통해
+                수렴 특성 분석
+              </li>
+              <li>
+                3주간의 인턴십 결과를 정리한 최종 보고서 작성
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">#MonteCarlo</span>
+          <span class="tag">#Python</span>
+          <span class="tag">#MATLAB</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>KAERI 하계 Internship</h2>
+        <p class="muted">
+          한국원자력연구원 하나로이용부 연구원 인턴
+          (2025.06.24 – 2025.08.31)
+        </p>
+
+        <img src="images/인턴(하계).jpg" class="card-image" alt="KAERI Internship">
+
+        <p>
+          학부 과정에서 배운 수학적 지식과 몬테카를로 방법론을 연구용 원자로(HANARO) 관련 연구 현장에 적용하였다.
+        </p><br>
+
+        <ul>
+          <li>CAD 기반 파이프 구조 모델을 MCNP 입력 형식으로 변환하는 과정에 참여</li>
+          <li>FreeCAD와 Autodesk Inventor를 활용한 형상 처리 및 수치 시뮬레이션 기반 데이터 분석 수행</li>
+          <li>KFE(한국핵융합에너지연구원) 및 K-STAR 실험 자료와의 연계를 통해 연구 현장의 계산·해석 흐름을 이해하고, 보고서 작성 및 세미나 발표 진행</li><br>
+          <li>2025 대한방사선방어학회 하계 워크숍 참석</li>
+          <li>2025 HANARO Symposium 포스터 발표 진행</li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">#MonteCarlo</span>
+          <span class="tag">#Simulation</span>
+          <span class="tag">#MCNP</span>
+          <span class="tag">#CAD</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="page">
+    <div class="gallery-column">
+
+      <div class="card">
+        <h2>Scenes</h2>
+        <div class="gallery-grid">
+          <img src="images/풍경1.jpg" alt="" class="gallery-item">
+          <img src="images/풍경2.jpg" alt="" class="gallery-item">
+          <img src="images/풍경6.jpg" alt="" class="gallery-item">
+          <img src="images/풍경8.jpg" alt="" class="gallery-item">
+          <img src="images/풍경5.jpg" alt="" class="gallery-item">
+          <img src="images/풍경7.jpg" alt="" class="gallery-item">
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Wildlife</h2>
+        <div class="gallery-grid">
+          <img src="images/고양이1.jpg" alt="" class="gallery-item">
+          <img src="images/물까치1.jpg" alt="" class="gallery-item">
+          <img src="images/비둘기4.jpg" alt="" class="gallery-item">
+          <img src="images/청설모1.jpg" alt="" class="gallery-item">
+          <img src="images/왜가리3.jpg" alt="" class="gallery-item">
+          <img src="images/쥐1.jpg" alt="" class="gallery-item">
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Flora</h2>
+        <div class="gallery-grid">
+          <img src="images/꽃1.jpg" alt="" class="gallery-item">
+          <img src="images/꽃2.jpg" alt="" class="gallery-item">
+          <img src="images/꽃3.jpg" alt="" class="gallery-item">
+          <img src="images/꽃7.jpg" alt="" class="gallery-item">
+          <img src="images/꽃4.jpg" alt="" class="gallery-item">
+          <img src="images/식물1.jpg" alt="" class="gallery-item">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="page">
+    <div class="gallery-column">
+
+      <div class="card">
+        <h2>Contact</h2>
+
+        <ul class="contact-list">
+          <li>
+            <span class="label">Email :</span>
+            <a href="mailto:jjaiya01@naver.com">jjaiya01@naver.com</a>
+          </li>
+          <li>
+            <span class="label">GitHub :</span>
+            <a href="https://github.com/yuvin00" target="_blank" rel="noopener">
+              github.com/yuvin00
+            </a>
+          </li>
+          <li>
+            <span class="label">Instagram :</span>
+            <a href="https://www.instagram.com/yuvin00/" target="_blank" rel="noopener">
+              instagram.com/yuvin00
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div class="image-modal" id="imageModal">
+  <span class="modal-close" id="modalClose">×</span>
+  <img id="modalImage">
+</div>
+
+  <script src="js/Myweb1.js"></script>
+</body>
+</html>
